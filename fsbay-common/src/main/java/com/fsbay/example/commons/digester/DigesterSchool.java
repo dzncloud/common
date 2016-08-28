@@ -19,7 +19,7 @@ public class DigesterSchool {
                 "com.fsbay.example.model.Student");    
         digester.addSetNext("school/department/student", "addStudent");    
         digester.addSetProperties("school/department/student");    
-        School school = (School)digester.parse(new File(Utils.getCnfPath("/digester/school.xml")));    
+        School school = (School)digester.parse(new File(Utils.getMainResPath("/digester/school.xml")));    
         System.out.println(school);
     }
     

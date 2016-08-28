@@ -43,7 +43,7 @@ import com.fsbay.example.utils.Utils;
          try {
  
              // 解析XML文件,并得到ROOT元素 
-              Reader reader  =  (Reader)digester.parse( new File(Utils.getCnfPath("/digester/readbook.xml")));
+              Reader reader  =  (Reader)digester.parse( new File(Utils.getMainResPath("/digester/readbook.xml")));
              // 可以使用的替代方法1
              // reader = (Reader)digester.getRoot();
              // 可以使用的方法2
