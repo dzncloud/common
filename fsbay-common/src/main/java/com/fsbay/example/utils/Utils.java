@@ -21,11 +21,10 @@ public class Utils {
 
 	public static String getTestResPath(String pkg) {
 		String bPath = getBasePath();
-		String tPath = bPath + "src/test/resources";
 		if (StringUtils.isNotBlank(pkg)) {
-			tPath = tPath + pkg;
+			bPath = bPath + pkg;
 		}
-		return tPath;
+		return bPath;
 	}
 
 	public static String getBasePath() {
